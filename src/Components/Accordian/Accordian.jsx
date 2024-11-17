@@ -41,8 +41,8 @@ function AccordianSection({ data, isActiveSection, setActiveIndex, sectionIndex 
         <div>{ isActiveSection ? '-' : '+' }</div>
       </div>
       { isActiveSection && <div className={ styles.content }>
-        { data.content }
-      </div> }
+            { data.content }
+          </div> }
     </div>
   );
 }

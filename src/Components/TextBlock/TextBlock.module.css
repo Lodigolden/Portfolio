@@ -1,0 +1,18 @@
+.textblock {
+  border: 1px solid #2b2b2b;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1); 
+  padding: 20px; 
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;  
+  background-color: #2b2b2b;
+}
+
+.textblock .text {
+  font-family: Arial;
+  font-size: 25px;
+  margin: 0;
+  color: white;
+}

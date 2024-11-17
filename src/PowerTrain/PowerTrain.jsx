@@ -17,12 +17,12 @@ import { motion } from 'framer-motion'
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 const accordian_data = [
   {
-    title: "Section 1", 
-    content: "Test"
+    title: 'Section 1', 
+    content: 'Test',
   },
   {
-    title: "Section 2",
-    content: "Yes"
+    title: 'Section 2',
+    content: 'Yes',
   },
 ];
 

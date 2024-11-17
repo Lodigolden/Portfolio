@@ -10,6 +10,7 @@ import Card from '../Components/Card/Card.jsx'
 import Title from '../Components/Title/Title.jsx'
 
 import powerSupplyImage from './Assets/Power_Supply_Icon/Power_Supply_Icon.svg'
+import websiteImage from './Assets/Website_Icon/Website_Icon.svg'
 
 import { motion } from 'framer-motion'
 
@@ -34,6 +35,11 @@ function SiteOverview()
           title='Power Train'
           image={ powerSupplyImage }
           path='powertrain'
+        />
+        <Card
+          title='This Website'
+          image={ websiteImage }
+          path='thiswebsite'
         />
       </motion.div>
     </>

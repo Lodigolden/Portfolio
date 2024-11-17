@@ -5,13 +5,19 @@
 
 .accordian .title {
   display: flex;
+  border-radius: 25px;
   justify-content: space-between;
   cursor: pointer;
   padding: 5px;
-  background: #21aeca;
+  background: #2b2b2b;
+  font-family: Arial;
+  color: #1561F0;
+  font-size: 25px;
 }
 
 .accordian .content {
   padding: 5px;
-  background: #39b9d2;
+  border-radius: 25px;
+  font-family: Arial;
+  color: white;
 }
