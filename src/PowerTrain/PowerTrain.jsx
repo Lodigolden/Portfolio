@@ -1,26 +1,24 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Author: Adam Hagengruber
-// Date Created: 11/14/2024
+// Date Created: 11/16/2024
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // * Includes
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-import Card from '../Components/Card/Card.jsx'
+import BackButton from '../Components/BackButton/BackButton.jsx'
 import Title from '../Components/Title/Title.jsx'
-
-import powerSupplyImage from './Assets/Power_Supply_Icon/Power_Supply_Icon.svg'
 
 import { motion } from 'framer-motion'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
- * * A component for the home page of the portfolio.
+ * * A component for the power train info.
  * 
  * ! This component is not done yet. 
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-function SiteOverview()
+function PowerTrain()
 {
   return(
     <>
@@ -29,15 +27,13 @@ function SiteOverview()
         animate={ { opacity: 1 } }
         exit={ { opacity: 1 } }
       >
-        <Title />
-        <Card
-          title='Power Train'
-          image={ powerSupplyImage }
-          path='powertrain'
+        <BackButton />
+        <Title 
+          title={ 'Power Train' }
         />
       </motion.div>
     </>
   );
-};
+}
 
-export default SiteOverview;
+export default PowerTrain;
