@@ -1,0 +1,17 @@
+.accordian {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.accordian .title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px;
+  background: #21aeca;
+}
+
+.accordian .content {
+  padding: 5px;
+  background: #39b9d2;
+}
