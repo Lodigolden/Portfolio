@@ -40,9 +40,22 @@ function AccordianSection({ data, isActiveSection, setActiveIndex, sectionIndex 
         <div>{ data.title }</div>
         <div>{ isActiveSection ? '-' : '+' }</div>
       </div>
-      { isActiveSection && <div className={ styles.content }>
-            { data.content }
-          </div> }
+
+      { isActiveSection && data.content1 && <div className={ styles.content }>
+        { data.content1 }
+      </div> }
+      { isActiveSection && data.img1 && <img src={ data.img1 } className={ styles.img }/>}
+
+      { isActiveSection && data.content2 && <div className={ styles.content }>
+        { data.content2 }
+      </div> }
+      { isActiveSection && data.img2 && <img src={ data.img2 } className={ styles.img }/>}
+
+      { isActiveSection && data.content3 && <div className={ styles.content }>
+        { data.content3 }
+      </div> }
+      { isActiveSection && data.img3 && <img src={ data.img3 } className={ styles.img }/>}
+
     </div>
   );
 }

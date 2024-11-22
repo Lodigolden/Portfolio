@@ -20,4 +20,14 @@
   border-radius: 25px;
   font-family: Arial;
   color: white;
+  font-size: 25px;
+}
+
+.accordian .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
