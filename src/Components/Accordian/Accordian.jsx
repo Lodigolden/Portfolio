@@ -72,7 +72,7 @@ function Accordian({ sections })
   //////////////////////////////////////////////////////////////////////////////////////////////////
   // * A function to change the index of the accordian to display to the user.
   //////////////////////////////////////////////////////////////////////////////////////////////////
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   return(
     <div className={ styles.accordian }>

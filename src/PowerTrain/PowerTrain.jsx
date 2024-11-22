@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 import Accordian from '../Components/Accordian/Accordian.jsx'
 import BackButton from '../Components/BackButton/BackButton.jsx'
+import TextBlock from '../Components/TextBlock/TextBlock.jsx'
 import Title from '../Components/Title/Title.jsx'
 
 import Full_Bridge_Rectifier_Img from './Assets/Full_Bridge_Rectifier/Full_Bridge_Rectifier.png'
@@ -17,16 +18,16 @@ import Full_Bridge_Rectifier_Simulation from './Assets/Full_Bridge_Rectifier/Ful
 import { motion } from 'framer-motion'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+// * Information about the project.
+////////////////////////////////////////////////////////////////////////////////////////////////////
+const basic_info = `I attempted to design, simulate, and lay-out a bug-regulator power supply. I 
+                    haven't taken classes on power converter design, so a lot of the design was 
+                    self-taught.`
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // * Data for the accordian.
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 const accordian_data = [
-  {
-    title: 'Overview', 
-
-    content1: 'I attempted to design, simulate, and lay-out a buck-regulator power supply.',
-    content2: 'I haven\'t taken classes on power converter design, so a lot of the design was ' + 
-              'self-taught.',
-  },
   {
     title: 'Full-Bridge Rectifier',
 
@@ -62,6 +63,9 @@ function PowerTrain()
         <BackButton />
         <Title 
           title={ 'Power Train' }
+        />
+        <TextBlock 
+          text={ basic_info }
         />
         <Accordian 
           sections={ accordian_data }
